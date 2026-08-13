@@ -1,6 +1,14 @@
 import io
 import logging
+import io
+import logging
+import os, threading
+from http.server import HTTPServer, BaseHTTPRequestHandler
 
+def run():
+    HTTPServer(("0.0.0.0", int(os.environ.get("PORT", 8080))), BaseHTTPRequestHandler).serve_forever()
+
+threading.Thread(target=run, daemon=True).start()
 from telegram import (
     Update,
     InlineKeyboardButton,
