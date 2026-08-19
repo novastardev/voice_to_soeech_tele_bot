@@ -1,6 +1,8 @@
 # 🔊 Voice to Speech — Telegram Bot
 
-A powerful Telegram bot that converts text to natural-sounding speech using AI-powered TTS APIs. Built by **Novastar** 👨‍💻
+**Built with 💛 by Novastar** 👨‍💻🇳🇬
+
+A powerful Telegram bot that converts text to natural-sounding speech using AI-powered TTS APIs. Deploy it yourself for FREE on Render!
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![Telegram](https://img.shields.io/badge/Telegram-Bot-green.svg)
@@ -20,7 +22,73 @@ A powerful Telegram bot that converts text to natural-sounding speech using AI-p
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Deploy on Render (FREE)
+
+Render gives you **FREE hosting** with a custom domain! Follow these steps:
+
+### Step 1: Fork This Repository
+
+Click the **Fork** button on GitHub to create your own copy.
+
+---
+
+### Step 2: Create a Render Account
+
+1. Go to **[render.com](https://render.com)**
+2. Sign up with your **GitHub account**
+
+---
+
+### Step 3: Create a New Web Service
+
+1. Click **"New +"** → **"Web Service"**
+2. Connect your forked repository
+3. Click **"Connect"**
+
+---
+
+### Step 4: Configure Your Service
+
+Fill in these settings:
+
+| Setting | Value |
+|---|---|
+| **Name** | `voice-to-speech` |
+| **Region** | Choose closest to you |
+| **Runtime** | Python 3 |
+| **Build Command** | `pip install -r requirements.txt` |
+| **Start Command** | `python3 bot.py` |
+| **Instance Type** | **Free** |
+
+---
+
+### Step 5: Add Environment Variables
+
+Click **"Environment"** and add these variables:
+
+- **`TELEGRAM_BOT_TOKEN`** — Get from [@BotFather](https://t.me/BotFather) on Telegram
+- **`TTS_API_KEY`** — Your TTS.ai API key
+- **`ALLOWED_CHAT_IDS`** — JSON array of allowed Telegram user IDs (e.g. `[8499843492]`)
+- **`BOT_OWNER_HANDLE`** — Your Telegram username (e.g. `@novastar_dev`)
+
+---
+
+### Step 6: Deploy!
+
+Click **"Create Web Service"** and wait ~2 minutes.
+
+Your bot will be live at:
+```
+https://voice-to-speech.onrender.com
+```
+
+🎉 **YOUR TTS BOT IS NOW LIVE!!!**
+
+---
+
+## 🖥️ Run Locally
+
+Want to run it on your own computer?
 
 ### 1. Clone the repository
 ```bash
@@ -38,37 +106,24 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-Edit `.env` with your values:
-- `TELEGRAM_BOT_TOKEN` — Get from [@BotFather](https://t.me/BotFather) on Telegram
-- `TTS_API_KEY` — Your TTS.ai API key
-- `ALLOWED_CHAT_IDS` — JSON array of allowed Telegram user IDs
-- `BOT_OWNER_HANDLE` — Your Telegram username
+Edit `.env` with your values.
 
 ### 4. Run the bot
 ```bash
-python bot.py
-```
-
-### 5. Run the web interface
-```bash
-python server.py
+python3 bot.py
 ```
 
 ---
 
 ## 📁 Project Structure
 
-```
-voice_to_speech/
-├── bot.py          # Telegram bot main file
-├── server.py       # Web interface server
-├── config.py       # Configuration loader
-├── database.py     # SQLite database operations
-├── tts.py          # TTS API integration
-├── requirements.txt
-├── .env.example    # Environment variables template
-└── README.md
-```
+- `bot.py` — Telegram bot main file
+- `server.py` — Web interface server
+- `config.py` — Configuration loader
+- `database.py` — SQLite database operations
+- `tts.py` — TTS API integration
+- `requirements.txt` — Python dependencies
+- `.env.example` — Environment variables template
 
 ---
 
@@ -93,7 +148,7 @@ The web interface provides a **no-signup-needed** way to use the TTS bot:
 
 ## 📝 License
 
-MIT License — feel free to use, modify, and distribute!
+**MIT License** — feel free to use, modify, and distribute!
 
 ---
 
@@ -102,7 +157,14 @@ MIT License — feel free to use, modify, and distribute!
 Contributions, issues, and feature requests are welcome!  
 Open a PR or create an issue on GitHub.
 
-**Built with 💛 by Novastar**  
+---
+
+**Built with 💛 by Novastar**
+
 - [GitHub](https://github.com/novastardev)
 - [Portfolio](https://novastar-dev.vercel.app)
 - [Telegram](https://t.me/novastar)
+
+---
+
+**Made in Nigeria 🇳🇬**
