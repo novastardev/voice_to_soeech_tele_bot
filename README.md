@@ -17,8 +17,6 @@ A powerful Telegram bot that converts text to natural-sounding speech using AI-p
 - 📚 **Voice Library** — Save and replay your generated speeches
 - ⚙️ **Settings** — Customize voice and manage preferences
 - 🔒 **Access Control** — Admin-approved chat whitelist
-- 🌐 **Web Interface** — Use the bot from any browser, no Telegram required
-- 📱 **Mobile Friendly** — Responsive design for any device
 
 ---
 
@@ -51,14 +49,12 @@ Click the **Fork** button on GitHub to create your own copy.
 
 Fill in these settings:
 
-| Setting | Value |
-|---|---|
-| **Name** | `voice-to-speech` |
-| **Region** | Choose closest to you |
-| **Runtime** | Python 3 |
-| **Build Command** | `pip install -r requirements.txt` |
-| **Start Command** | `python3 bot.py` |
-| **Instance Type** | **Free** |
+- **Name** — `voice-to-speech`
+- **Region** — Choose closest to you
+- **Runtime** — Python 3
+- **Build Command** — `pip install -r requirements.txt`
+- **Start Command** — `python3 bot.py`
+- **Instance Type** — **Free**
 
 ---
 
@@ -77,12 +73,7 @@ Click **"Environment"** and add these variables:
 
 Click **"Create Web Service"** and wait ~2 minutes.
 
-Your bot will be live at:
-```
-https://voice-to-speech.onrender.com
-```
-
-🎉 **YOUR TTS BOT IS NOW LIVE!!!**
+Your bot will be live! 🎉
 
 ---
 
@@ -91,17 +82,20 @@ https://voice-to-speech.onrender.com
 Want to run it on your own computer?
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/novastardev/voice_to_speech.git
 cd voice_to_speech
 ```
 
 ### 2. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 3. Configure environment variables
+
 ```bash
 cp .env.example .env
 ```
@@ -109,6 +103,7 @@ cp .env.example .env
 Edit `.env` with your values.
 
 ### 4. Run the bot
+
 ```bash
 python3 bot.py
 ```
@@ -118,21 +113,11 @@ python3 bot.py
 ## 📁 Project Structure
 
 - `bot.py` — Telegram bot main file
-- `server.py` — Web interface server
 - `config.py` — Configuration loader
 - `database.py` — SQLite database operations
 - `tts.py` — TTS API integration
 - `requirements.txt` — Python dependencies
 - `.env.example` — Environment variables template
-
----
-
-## 🌐 Web Interface
-
-The web interface provides a **no-signup-needed** way to use the TTS bot:
-- Type text → Select voice → Hear speech
-- Works in any browser — no Telegram needed
-- Fully responsive on mobile and desktop
 
 ---
 
@@ -142,7 +127,6 @@ The web interface provides a **no-signup-needed** way to use the TTS bot:
 - **python-telegram-bot** — Telegram Bot API
 - **tts.ai** — AI Text-to-Speech API
 - **SQLite** — User data storage
-- **Flask** — Web interface framework
 
 ---
 
